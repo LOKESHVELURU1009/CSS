@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TRANSITIONS</title>
+  <style>
+      body{
+          position: relative;
+          left: 35%;
+      }
+      h1{
+          font-style: italic;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          width: 300px;
+      }
+      #wish{
+          background-color: orange;
+          color: ghostwhite;
+      }
+      #greet{
+          background-color: red;
+          color: ghostwhite;
+      }
+      #wish:hover{
+          background-color: green;
+          transition: all 5s linear;
+      }
+      #greet:hover{
+          background-color: yellow;
+          color: red;
+          transition: all 5s ease;
+      }
+  </style>
+</head>
+<body>
+    <h1 id="wish">
+        Happy Republic Day
+    </h1>
+    <h1 id="greet">
+        happy saraswati puja
+    </h1>
+</body>
+</html>

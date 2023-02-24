@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>POSITION 2</title>
+  <style>
+      #parent{
+          width: 500px;
+          height: 500px;
+          background-color: grey;
+          position: relative;
+          left: 300px;
+      }
+      .child1{
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          color: ghostwhite;
+          position: absolute;
+          left: 200px;
+          top: 300px;
+        }
+        .child2{
+            width: 50px;
+            height: 50px;
+            background-color: yellowgreen;
+            color: ghostwhite;
+            position: absolute;
+            right: 70%;
+            top: 50%;
+        }
+  </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>

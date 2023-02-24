@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>ANIMATION2</title>
+ <style>
+     div{
+         background: repeating-conic-gradient(white 20%,violet 30%,purple 40%);
+         width: 100px;
+         height: 100px;
+         border: 2px inset orange;
+         animation-name: move;
+         animation-duration: 5s;
+         animation-timing-function: linear;
+         animation-iteration-count:infinite;
+         animation-direction: alternate-reverse;
+         position: relative;
+     }
+     @keyframes move {
+         0%,100%{
+             top: 0;
+             left: 0;
+             filter: hue-rotate(0);
+         }
+         25%{
+             top: 0;
+             left: 500px;
+             filter: hue-rotate(90deg);
+             border-radius: 25px;
+         }
+         50%{
+             top: 400;
+             left: 500px;
+             filter: hue-rotate(180deg);
+             border-radius: 40px;
+         }
+         75%{
+             top: 400;
+             left: 0px;
+             filter: hue-rotate(270deg);
+             border-radius: 75px;
+         }
+
+
+     }
+
+
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
